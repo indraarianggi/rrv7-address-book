@@ -3,7 +3,7 @@ import { getContacts } from "../data";
 import type { Route } from "./+types/sidebar";
 import { Form } from "react-router";
 
-export async function clientLoader() {
+export async function loader() {
   const contacts = await getContacts();
   return { contacts };
 }
